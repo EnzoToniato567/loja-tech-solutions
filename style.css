@@ -1,0 +1,145 @@
+body {
+    font-family: Segeo UI, sans-serif;
+    margin: 0;
+    background-color: beige;
+    color: black;
+}
+
+header {
+    color: #fff;
+    background: rgb(0, 0, 98);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: bold; /*Negrito*/
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(171, 0, 0);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.tabela-container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.tabela-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(0, 95, 95);
+}  
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: rgb(74, 0, 135);
+    color: white;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+td img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+tbody tr:nth-child(1) {background-color: #f5eef8;}
+
+tbody tr:nth-child(2) {background-color: #e8e8e8;}
+
+tbody tr:nth-child(3) {background-color: #f8f5ee;}
+
+tbody tr:nth-child(4) {background-color: #f5eef8;}
+
+tbody tr:nth-child(5) {background-color: #eeeef8;}
+
+tbody td {
+    padding: 12px;
+    font-size: 15px;
+}
+
+tbody td a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+tbody td a:hover {
+    color:rgb(0, 34, 255);
+    text-decoration: underline;
+}
+
+tbody tr {
+    transition: backgroud 0.3s, transform 0.2s;
+}
+
+tbody tr:hover {
+    transform: scale(1.01);
+    filter: brightness(0.95);
+}
+
+.preco {
+    color: rgba(0, 110, 0, 0.597);
+    font-weight: bold;
+}
+
+.estoque {
+    font-weight: bold;
+}
+
+.estoque.baixo {
+    color: rgb(159, 0, 0);
+}
+
+.estoque.alto {
+    color: green;
+}
+
+footer {
+    background: gray;
+    color: #fff;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+

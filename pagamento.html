@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Pagamento</title>
+</head>
+<body>
+  <center><h1>Formulário de Pagamento de Produtos</h1></center>
+  <br>
+
+  <form action="confirmacao.html" method="POST">
+    <fieldset>
+      <legend>Dados do comprador</legend>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Seu email" required />
+      <br>
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 00000-0000" required />
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Produto</legend>
+      <label>Selecione o produto desejado:</label><br><br>
+      <input type="radio" id="monitor" name="produto" value="Monitor LG 24MS500-B">
+      <label for="monitor">Monitor LG 24</label><br>
+
+      <input type="radio" id="notebook1" name="produto" value="Notebook Dell Inspiron">
+      <label for="notebook1">Notebook Dell Inspiron</label><br>
+
+      <input type="radio" id="mouse" name="produto" value="Mouse Gamer RGB">
+      <label for="mouse">Mouse Gamer RGB</label><br>
+
+      <input type="radio" id="teclado" name="produto" value="Teclado HyperX">
+      <label for="teclado">Teclado HyperX</label><br>
+
+      <input type="radio" id="hd" name="produto" value="Hd Externo">
+      <label for="hd">Hd Externo</label><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Forma de pagamento</legend>
+      <label>Escolha a forma de pagamento:</label><br><br>
+      <input type="radio" id="cartao" name="pagamento" value="Cartão de crédito">
+      <label for="cartao">💳 Cartão de crédito</label><br>
+
+      <input type="radio" id="pix" name="pagamento" value="Pix">
+      <label for="pix">🔁 Pix</label><br>
+
+      <input type="radio" id="boleto" name="pagamento" value="Boleto bancário">
+      <label for="boleto">🧾 Boleto bancário</label><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Observações</legend>
+      <label for="mensagem">Mensagem ou instruções adicionais:</label><br>
+      <textarea name="mensagem" placeholder="Faça seu comentário ou tire sua dúvida aqui" required></textarea>
+    </fieldset>
+    <br>
+
+    <button type="submit">Finalizar Pedido</button>
+    <button type="reset">Limpar</button>
+</body>
+</html>
